@@ -19,9 +19,6 @@ async function sendMessage() {
     chatInput.value = '';
 
     if (message !== '') {
-        const loadingMessage = '...';
-        displayMessage(loadingMessage, 'bot');
-
         // Send message to server
         const response = await fetch('http://localhost:8008/', {
             method: 'POST',
